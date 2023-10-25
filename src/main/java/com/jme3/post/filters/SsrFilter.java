@@ -415,7 +415,7 @@ public class SsrFilter extends Filter{
         super.read(im);
         InputCapsule ic = im.getCapsule(this);
         approximateNormals = ic.readBoolean("approximateNormals", true);
-        approximateGlossiness = ic.readBoolean("intensity", true);
+        approximateGlossiness = ic.readBoolean("approximateGlossiness", true);
         sampleNearby = ic.readBoolean("sampleNearby", true);
         fastBlur = ic.readBoolean("fastBlur", true);
         downSampleFactor = ic.readFloat("downSampleFactor", 1f);
